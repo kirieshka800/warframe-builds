@@ -1,0 +1,9 @@
+**/bin
+**/obj
+**/App_Data
+.idea
+.vs
+.git
+**/appsettings.Local.json
+.env
+**/*.zip

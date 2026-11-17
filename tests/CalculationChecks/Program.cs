@@ -1,0 +1,43 @@
+using WarframeBuilds.Models;
+using WarframeBuilds.Services;
+
+static void Check(bool value, string name) { if (!value) throw new Exception(name); Console.WriteLine($"PASS: {name}"); }
+var vitality = new Mod { Name = "Vitality", BaseDrain = 2, MaxRank = 10, Polarity = "Vazarin", Compatibility = "Warframe", LevelStatsJson = "[{\"stats\":[\"+40% Health\"]},{\"stats\":[\"+80% Health\"]}]" };
+Check(BuildCalculator.ModCost(vitality, 1, "Vazarin") == 2, "matching rounds up");
+Check(BuildCalculator.ModCost(vitality, 1, "Madurai") == 4, "mismatch rounds up");
+Check(BuildCalculator.ModCost(vitality, 1, "Vazarin", true) == 6, "matching aura doubles");
+Check(BuildCalculator.ModCost(vitality, 1, "Madurai", true) == 2, "mismatched aura rounds down");
+var build = new Build { WarframeId = 1, Warframe = new Warframe { BaseHealth = 100 }, FormasCount = 12, BuildMods = [new BuildMod { SlotIndex = 0, Mod = vitality, CurrentRank = 1 }] };
+var stats = BuildCalculator.Calculate(build);
+Check(stats.Capacity == 60, "forma does not increase capacity");
+Check(Math.Abs(stats.Health - 180) < .001, "selected rank effects");
+var corrupted = new Mod { Name = "Corrupted", Compatibility = "Warframe", MaxRank = 0, LevelStatsJson = "[{\"stats\":[\"+99% Ability Strength\",\"-55% Ability Efficiency\"]}]" };
+build.BuildMods.Add(new BuildMod { SlotIndex = 1, Mod = corrupted });
+stats = BuildCalculator.Calculate(build);
+Check(stats.AbilityStrength == 199 && Math.Abs(stats.AbilityEfficiency - 45) < .001, "negative effects retained");
+var gun = new Build { WeaponId = 1, Weapon = new Weapon { Name = "Braton", Category = "Primary", WeaponType = "Rifle", BaseDamage = 10, CriticalChance = .1 }, BuildMods = [] };
+Check(!ModCompatibility.ValidSlots(gun).Contains(8), "guns have no stance");
+Check(!ModCompatibility.CanEquip(gun, vitality, 0), "frame mods rejected on guns");
+Check(ModCompatibility.Family(new Mod { Name = "Primed Continuity" }) == ModCompatibility.Family(new Mod { Name = "Continuity" }), "exclusive variant family");
+var rifle = new Mod { Name = "Test", Compatibility = "Rifle", LevelStatsJson = "[{\"stats\":[\"+100% Damage\",\"+50% Critical Chance\",\"On Kill: +100% Fire Rate\"]}]" };
+gun.BuildMods.Add(new BuildMod { SlotIndex = 0, Mod = rifle });
+stats = BuildCalculator.Calculate(gun);
+Check(stats.Damage == 20 && Math.Abs(stats.CriticalChance - .15) < .001, "weapon base stat scaling");
+Check(stats.FireRate == 0 && stats.Warnings.Any(x => x.Contains("условный")), "conditional effects excluded with warning");
+var projection = new Mod { Name = "Corrosive Projection", BaseDrain = -2, MaxRank = 5, Polarity = "Naramon", Compatibility = "Warframe", Type = "Aura" };
+Check(BuildCalculator.ModCost(projection, 5, "None", true) == 7, "negative aura base drain yields correct bonus");
+Check(BuildCalculator.ModCost(projection, 5, "Naramon", true) == 14, "negative aura base drain matching bonus");
+var steel = new Mod { Name = "Steel Charge", BaseDrain = -4, MaxRank = 5, Polarity = "Madurai" };
+Check(BuildCalculator.ModCost(steel, 5, "None", true) == 9, "steel charge negative base drain");
+var blindRage = new Mod { Name = "Blind Rage", Compatibility = "Warframe", LevelStatsJson = "[{\"stats\":[\"+99% Ability Strength -55% Ability Efficiency\"]}]" };
+var blindBuild = new Build { WarframeId = 1, Warframe = new Warframe(), BuildMods = [new BuildMod { Mod = blindRage, SlotIndex = 0 }] };
+var blindStats = BuildCalculator.Calculate(blindBuild);
+Check(blindStats.AbilityStrength == 199 && Math.Abs(blindStats.AbilityEfficiency - 45) < .001, "inline ASCII negative effect is parsed independently");
+
+var trueSteel = new Mod { Name = "True Steel", Compatibility = "Melee", LevelStatsJson = "[{\"stats\":[\"+120% Critical Chance (x2 for Heavy Attacks)\"]}]" };
+var meleeBuild = new Build { WeaponId = 1, Weapon = new Weapon { Category = "Melee", CriticalChance = .1 }, BuildMods = [new BuildMod { Mod = trueSteel, SlotIndex = 0 }] };
+Check(Math.Abs(BuildCalculator.Calculate(meleeBuild).CriticalChance - .22) < .001, "true steel ordinary critical bonus retained");
+projection.LevelStatsJson = "[{\"stats\":[\"Enemies lose -18% Armor\"]}]";
+var auraBuild = new Build { WarframeId = 1, Warframe = new Warframe { BaseArmor = 240 }, BuildMods = [new BuildMod { Mod = projection, SlotIndex = 8 }] };
+Check(BuildCalculator.Calculate(auraBuild).Armor == 240, "enemy armor debuff does not reduce player armor");
+Console.WriteLine("All calculation checks passed.");

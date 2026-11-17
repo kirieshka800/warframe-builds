@@ -1,0 +1,2 @@
+@model CreateBuildViewModel
+@{ViewData["Title"]="Настройки билда";}<section class="page-heading"><span class="eyebrow">КОНСТРУКТОР</span><h1>Настройки билда</h1></section><form action="/Builds/Edit/@ViewBag.BuildId" method="post" class="panel build-form">@Html.AntiForgeryToken()<partial name="_BuildForm" model="Model"/><button class="button primary">Сохранить изменения</button></form>

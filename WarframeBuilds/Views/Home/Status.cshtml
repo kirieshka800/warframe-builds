@@ -1,0 +1,2 @@
+@{ViewData["Title"]="Страница недоступна";var code=ViewBag.StatusCode;}
+<section class="empty"><span class="eyebrow">СИГНАЛ ПРЕРВАН / @code</span><h1>@(code == 403 ? "Доступ ограничен." : "Страница не найдена.")</h1><p>@(code == 403 ? "Войди в профиль автора, чтобы изменить этот материал." : "Возможно, ссылка устарела или материал был удалён.")</p><a class="button primary" href="/Builds">К билдам сообщества →</a></section>
