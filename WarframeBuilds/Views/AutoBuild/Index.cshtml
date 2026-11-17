@@ -1,0 +1,23 @@
+@model AutoBuildFormViewModel
+@{ViewData["Title"]="Автоподбор билда";}
+<section class="page-heading"><span class="eyebrow">КОНСТРУКТОР / АВТОПОДБОР</span><h1>От цели — к сборке.</h1><p>Выбери снаряжение и задачу. Получи стартовый билд по правилам и проверь его перед сохранением.</p></section>
+<form action="/AutoBuild/Preview" method="post" class="panel build-form" data-auto-form>
+ @Html.AntiForgeryToken()
+ <div asp-validation-summary="All" class="validation"></div>
+ <div class="form-grid">
+  <label>Тип снаряжения<select asp-for="Input.TargetType" data-target-type><option value="warframe">Варфрейм</option><option value="weapon">Оружие</option></select></label>
+  <label data-target="warframe">Варфрейм<select asp-for="Input.WarframeId"><option value="">Выбери варфрейм</option>@foreach(var x in Model.Warframes){<option value="@x.Id">@x.Name</option>}</select></label>
+  <label data-target="weapon">Оружие<select asp-for="Input.WeaponId"><option value="">Выбери оружие</option>@foreach(var x in Model.Weapons){<option value="@x.Id">@x.Name (@x.Category)</option>}</select></label>
+ </div>
+ <div class="form-grid">
+  <label>Цель сборки<select asp-for="Input.Goal" data-auto-goal>
+   @foreach(var goal in AutoBuildPlanner.Goals(false)){<option value="@goal.Key" data-kind="@(goal.Key=="balanced"?"both":"warframe")">@goal.Value</option>}
+   @foreach(var goal in AutoBuildPlanner.Goals(true).Where(x=>x.Key!="balanced")){<option value="@goal.Key" data-kind="weapon">@goal.Value</option>}
+  </select></label>
+  <label>Максимум форм<input asp-for="Input.MaxFormas" type="number" min="0" max="8"/><small>0 — сохранить нейтральные полярности. Используем не больше указанного лимита.</small></label>
+ </div>
+ <label class="check"><input asp-for="Input.HasReactor"/> Установлен реактор / катализатор Орокин (60 вместо 30 вместимости)</label>
+ <p class="muted small">Выбираются моды из каталога сайта, а не из твоего игрового инвентаря. Это стартовая сборка, не гарантия оптимального билда для всех миссий. Без отдельной AI-модели.</p>
+ <button class="button primary" type="submit" data-auto-generate>Подобрать и показать предложение →</button>
+ <p class="muted small">На этом шаге ничего не сохраняется. Подтвердить или отменить можно на следующей странице.</p>
+</form>

@@ -3,3 +3,5 @@
 document.querySelectorAll('[data-equipment-image]').forEach(image=>image.addEventListener('error',()=>{const fallback=document.createElement('span');fallback.textContent='◈';image.replaceWith(fallback);}));
 
 document.querySelectorAll('[data-busy-form]').forEach(form=>form.addEventListener('submit',event=>{if(form.dataset.submitting==='true'){event.preventDefault();return;}form.dataset.submitting='true';const button=form.querySelector('button');button.disabled=true;button.textContent=button.dataset.busyLabel;button.setAttribute('aria-live','polite');}));
+
+(()=>{const form=document.querySelector('[data-auto-form]');if(form){const type=form.querySelector('[data-target-type]'),goals=form.querySelector('[data-auto-goal]');const refresh=()=>{Array.from(goals.options).forEach(o=>{o.disabled=o.hidden=o.dataset.kind!=='both'&&o.dataset.kind!==type.value;});if(goals.selectedOptions[0]?.disabled)goals.value='balanced';};type.addEventListener('change',refresh);refresh();}document.querySelectorAll('[data-auto-confirm]').forEach(button=>button.form.addEventListener('submit',()=>{button.disabled=true;button.textContent='Сохраняем…';}));})();
