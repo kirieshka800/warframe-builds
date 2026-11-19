@@ -6,7 +6,7 @@
 <polyline points="600,368.0 475,430 475,790 240,790 240.0,875" fill="none" stroke="#475569" stroke-width="1.7" />
 <polygon points="600,368.0 593.7075076918319,377.8185813920162 582.0828806715033,376.88689118693435 588.3753729796714,367.06830979491815" stroke="#475569" stroke-width="1.7" fill="#475569"/>
 <polyline points="1000,988.0 1095.0,988.0 1095.0,1018.0 1190,1018.0" fill="none" stroke="#475569" stroke-width="1.7" />
-<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР16 · Классы: модель данных</text>
+<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР16 · Классы: свойства моделей</text>
 <text x="52" y="99" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#475569">Ключевые свойства исходных C#-классов · + public · ? nullable · {readOnly} вычисляемое свойство · — собственных методов нет</text>
 <rect x="600" y="175" width="430" height="386" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="600" y="175" width="430" height="42" fill="#e9effb" stroke="#334155"/>
 <text x="815.0" y="201.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Build</text>
@@ -110,9 +110,10 @@
 <text x="1092" y="1436" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">GearItem не является базовым классом Warframe/Weapon.</text>
 <text x="1092" y="1456" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">UserId — строковый идентификатор Claims;</text>
 <text x="1092" y="1476" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">класса User в модели проекта нет.</text>
-<rect x="60" y="1610" width="1520" height="95" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<rect x="60" y="1610" width="1520" height="110" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
 <text x="72" y="1636" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Связи: ◆ композиция (ромб у Build); сплошная линия — ассоциация. Кратности подписаны словами рядом с линиями.</text>
-<text x="72" y="1656" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">У EF-сущностей показаны реальные свойства; CRUD-операции находятся в контроллерах, а не в моделях.</text>
+<text x="72" y="1656" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">У EF-сущностей показаны реальные свойства. Их собственных методов нет.</text>
+<text x="72" y="1676" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">МЕТОДЫ находятся на второй вкладке «2 · Методы сервисов и контроллеров» — в нижних секциях классов.</text>
 <rect x="425" y="285" width="170" height="80" rx="3" fill="white" fill-opacity="0.96"/>
 <text x="510.0" y="310.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">цель: 0..1 Warframe на</text>
 <text x="510.0" y="328.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Build;</text>

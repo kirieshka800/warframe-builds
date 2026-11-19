@@ -24,7 +24,7 @@
 <polyline points="1054.0,1457.0 1060.0,1470 1066.0,1457.0" stroke="#475569" stroke-width="1.7" fill="none"/>
 <polyline points="750,1269.5 650,1315 650,1890 560,1878.5" fill="none" stroke="#475569" stroke-width="1.7" stroke-dasharray="7 5"/>
 <polyline points="573.6556391171833,1874.1961040554802 560,1878.5 572.1346720484413,1886.0993245934606" stroke="#475569" stroke-width="1.7" fill="none"/>
-<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР16 · Классы: сервисы, контроллеры и автоподбор</text>
+<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР16 · Классы: методы сервисов и контроллеров</text>
 <text x="52" y="99" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#475569">Фрагмент реализации ASP.NET Core / EF Core · повторяющиеся типы с первой страницы обозначены ссылкой · параметры сокращены по примечанию</text>
 <rect x="750" y="140" width="440" height="126" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="750" y="140" width="440" height="42" fill="#e9effb" stroke="#334155"/>
 <text x="970.0" y="166.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">«framework» Controller</text>

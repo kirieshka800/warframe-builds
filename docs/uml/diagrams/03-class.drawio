@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" modified="2026-11-19T12:00:00.000Z" agent="Warframe UML" version="24.7.17" type="device" pages="2">
-  <diagram id="03-class-0" name="Модель данных">
+  <diagram id="03-class-0" name="1 · Свойства моделей">
     <mxGraphModel dx="1640" dy="1760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="1760" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="ЛР16 · Классы: модель данных" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+        <mxCell id="title" value="ЛР16 · Классы: свойства моделей" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="22" width="1560" height="44" />
         </mxCell>
         <mxCell id="subtitle" value="Ключевые свойства исходных C#-классов · + public · ? nullable · {readOnly} вычисляемое свойство · — собственных методов нет" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">
@@ -113,8 +113,8 @@
         <mxCell id="independent" value="Guide и GearItem — самостоятельные сущности.&lt;br&gt;GearItem не является базовым классом Warframe/Weapon.&lt;br&gt;UserId — строковый идентификатор Claims;&lt;br&gt;класса User в модели проекта нет." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="1080" y="1390" width="500" height="135" />
         </mxCell>
-        <mxCell id="legend" value="Связи: ◆ композиция (ромб у Build); сплошная линия — ассоциация. Кратности подписаны словами рядом с линиями.&lt;br&gt;У EF-сущностей показаны реальные свойства; CRUD-операции находятся в контроллерах, а не в моделях." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry as="geometry" x="60" y="1610" width="1520" height="95" />
+        <mxCell id="legend" value="Связи: ◆ композиция (ромб у Build); сплошная линия — ассоциация. Кратности подписаны словами рядом с линиями.&lt;br&gt;У EF-сущностей показаны реальные свойства. Их собственных методов нет.&lt;br&gt;МЕТОДЫ находятся на второй вкладке «2 · Методы сервисов и контроллеров» — в нижних секциях классов." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1610" width="1520" height="110" />
         </mxCell>
         <mxCell id="edge0" value="цель: 0..1 Warframe на Build;&lt;br&gt;0..* Build на Warframe" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="Build" target="Warframe">
           <mxGeometry as="geometry" relative="1">
@@ -162,12 +162,12 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="03-class-1" name="Сервисы и контроллеры">
+  <diagram id="03-class-1" name="2 · Методы сервисов и контроллеров">
     <mxGraphModel dx="2140" dy="2360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2140" pageHeight="2360" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="ЛР16 · Классы: сервисы, контроллеры и автоподбор" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+        <mxCell id="title" value="ЛР16 · Классы: методы сервисов и контроллеров" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="22" width="2060" height="44" />
         </mxCell>
         <mxCell id="subtitle" value="Фрагмент реализации ASP.NET Core / EF Core · повторяющиеся типы с первой страницы обозначены ссылкой · параметры сокращены по примечанию" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">

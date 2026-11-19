@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-19T12:00:00.000Z" agent="Warframe UML" version="24.7.17" type="device" pages="2">
+  <diagram id="04-component-0" name="Исходный код">
+    <mxGraphModel dx="1760" dy="1530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1760" pageHeight="1530" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ЛР17 · Компоненты: исходный код" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="22" width="1680" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Физическая структура исходников warframe-builds · блоки — группы файлов, а не отдельные микросервисы" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="72" width="1680" height="40" />
+        </mxCell>
+        <mxCell id="views" value="«исходный код» Представления&lt;br&gt;&lt;br&gt;Views/**/*.cshtml&lt;br&gt;Views/Shared/_Layout.cshtml" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="190" width="450" height="140" />
+        </mxCell>
+        <mxCell id="program" value="«исходный код» Точка входа&lt;br&gt;&lt;br&gt;Program.cs&lt;br&gt;MVC, DI, авторизация, миграции" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="670" y="190" width="430" height="140" />
+        </mxCell>
+        <mxCell id="config" value="«файлы конфигурации»&lt;br&gt;&lt;br&gt;appsettings*.json&lt;br&gt;WarframeBuilds.csproj&lt;br&gt;Dockerfile, compose.yaml" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1250" y="190" width="450" height="140" />
+        </mxCell>
+        <mxCell id="controllers" value="«исходный код» Контроллеры&lt;br&gt;&lt;br&gt;BuildsController.cs + BuildsTransfer.cs&lt;br&gt;AutoBuildController.cs, GuidesController.cs&lt;br&gt;HomeController.cs, DatabaseController.cs&lt;br&gt;AuthController.cs" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="475" width="510" height="180" />
+        </mxCell>
+        <mxCell id="calc" value="«исходный код» Расчёт и подбор&lt;br&gt;&lt;br&gt;Services/BuildCalculator.cs&lt;br&gt;Services/ModCompatibility.cs&lt;br&gt;Services/AutoBuildPlanner.cs" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="670" y="475" width="430" height="180" />
+        </mxCell>
+        <mxCell id="store" value="«исходный код» Предложения&lt;br&gt;&lt;br&gt;Services/AutoBuildProposalStore.cs&lt;br&gt;MemoryCache; токены; TTL 15 минут" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1250" y="475" width="450" height="180" />
+        </mxCell>
+        <mxCell id="dispose" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#334155;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1463" y="730" width="24" height="24" />
+        </mxCell>
+        <mxCell id="label9" value="IDisposable&lt;br&gt;Dispose(): void" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1363" y="758" width="224" height="50" />
+        </mxCell>
+        <mxCell id="db" value="«исходный код» Доступ к БД&lt;br&gt;&lt;br&gt;Data/ApplicationDbContext.cs&lt;br&gt;DbSet, ограничения, связи EF Core" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="950" width="510" height="150" />
+        </mxCell>
+        <mxCell id="models" value="«исходный код» Модели&lt;br&gt;&lt;br&gt;Models/Build.cs, Mod.cs&lt;br&gt;Warframe.cs, Weapon.cs&lt;br&gt;BuildComment.cs, Guide.cs, GearItem.cs&lt;br&gt;AutoBuildPlan.cs, BuildStatistics.cs" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="670" y="950" width="430" height="180" />
+        </mxCell>
+        <mxCell id="api" value="«исходный код» Синхронизация&lt;br&gt;&lt;br&gt;Services/WarframeApiService.cs&lt;br&gt;HttpClient → JSON каталога WFCD" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1250" y="950" width="450" height="150" />
+        </mxCell>
+        <mxCell id="seed" value="«исходный код» Схема и данные&lt;br&gt;&lt;br&gt;Migrations/*.cs&lt;br&gt;Services/CatalogSeeder.cs" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1230" width="510" height="130" />
+        </mxCell>
+        <mxCell id="note" value="Пунктирная стрелка направлена от потребителя к используемому компоненту. Сплошная линия с окружностью — предоставляемый интерфейс.&lt;br&gt;Контроллеры также используют модели и WarframeApiService (HomeController.SyncData); Program регистрирует DbContext/HttpClient и запускает миграции/сидер.&lt;br&gt;Чтобы не пересекать все линии, эти зависимости перечислены здесь. Все группы C# компилируются в одно веб-приложение WarframeBuilds.dll." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1400" width="1640" height="95" />
+        </mxCell>
+        <mxCell id="edge0" value="использует Razor" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="controllers" target="views">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="315.0" y="402.5" />
+              <mxPoint x="285.0" y="402.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="MVC / маршрутизация" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="program" target="controllers">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="615" y="260" />
+              <mxPoint x="615" y="420" />
+              <mxPoint x="315" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="читает конфигурацию" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="program" target="config">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="регистрирует singleton" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="program" target="store">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="885" y="390" />
+              <mxPoint x="1475" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="вызывает" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="controllers" target="calc">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="запрашивает / сохраняет" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="controllers" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="использует Build / Mod;&lt;br&gt;создаёт результаты" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="calc" target="models">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="store" target="dispose">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="AutoBuildController использует Store" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="controllers" target="store">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="315" y="875" />
+              <mxPoint x="1205" y="875" />
+              <mxPoint x="1205" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="EF-модели" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="db" target="models">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="620.0" y="1025.0" />
+              <mxPoint x="620.0" y="1040.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="сохраняет каталог" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="api" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1475" y="1175" />
+              <mxPoint x="610" y="1175" />
+              <mxPoint x="610" y="1025" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="создаёт / обновляет" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="api" target="models">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1175.0" y="1025.0" />
+              <mxPoint x="1175.0" y="1040.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="применяется через EF Core" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="seed" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="04-component-1" name="Сборка и выполнение">
+    <mxGraphModel dx="1880" dy="1860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1860" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ЛР17 · Компоненты: сборка и выполнение" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="22" width="1800" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Три вида компонентов из методички: исходные рабочие продукты, компоненты развёртывания и исполняемые компоненты" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="72" width="1800" height="40" />
+        </mxCell>
+        <mxCell id="source" value="«рабочий продукт» Проект .NET&lt;br&gt;&lt;br&gt;WarframeBuilds.csproj + *.cs&lt;br&gt;Views/**/*.cshtml&lt;br&gt;Dockerfile: dotnet publish" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="170" width="460" height="150" />
+        </mxCell>
+        <mxCell id="assembly" value="«развёртывание» Приложение&lt;br&gt;&lt;br&gt;WarframeBuilds.dll&lt;br&gt;Razor-представления обычно компилируются&lt;br&gt;с приложением при publish" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="170" width="510" height="150" />
+        </mxCell>
+        <mxCell id="libs" value="«развёртывание» Библиотеки&lt;br&gt;&lt;br&gt;Microsoft.AspNetCore.* / .NET 10&lt;br&gt;Microsoft.EntityFrameworkCore.*&lt;br&gt;Npgsql.*; AspNet.Security.OpenId.Steam" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1390" y="170" width="430" height="150" />
+        </mxCell>
+        <mxCell id="host" value="«исполнение» Хост dotnet&lt;br&gt;&lt;br&gt;dotnet WarframeBuilds.dll&lt;br&gt;ASP.NET Core / Kestrel; процесс web&lt;br&gt;Docker: HTTP :8080 → localhost:5026" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="510" width="510" height="170" />
+        </mxCell>
+        <mxCell id="browser" value="«исполнение» Веб-браузер&lt;br&gt;&lt;br&gt;Получает HTML / CSS / JavaScript&lt;br&gt;Формы: GET / POST; cookies; CSRF" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="920" width="460" height="150" />
+        </mxCell>
+        <mxCell id="http" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#334155;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="610" y="983" width="24" height="24" />
+        </mxCell>
+        <mxCell id="label8" value="HTTP GET / POST&lt;br&gt;HTML / формы / файлы" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="510" y="1011" width="224" height="50" />
+        </mxCell>
+        <mxCell id="postgres" value="«исполнение» PostgreSQL 17&lt;br&gt;&lt;br&gt;База warframe; TCP :5432&lt;br&gt;Контейнер db; том postgres-data" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1390" y="920" width="430" height="150" />
+        </mxCell>
+        <mxCell id="sql" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#334155;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1270" y="983" width="24" height="24" />
+        </mxCell>
+        <mxCell id="label11" value="PostgreSQL wire protocol&lt;br&gt;SQL через EF Core / Npgsql" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1170" y="1011" width="224" height="50" />
+        </mxCell>
+        <mxCell id="static" value="«развёртывание» Веб-ресурсы&lt;br&gt;&lt;br&gt;wwwroot/css/site.css&lt;br&gt;wwwroot/js/site.js, wwwroot/lib/**&lt;br&gt;UseStaticFiles()" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1280" width="460" height="150" />
+        </mxCell>
+        <mxCell id="steam" value="«внешний компонент» Steam&lt;br&gt;&lt;br&gt;Проверка Steam OpenID&lt;br&gt;/auth/login → внешний провайдер" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="1280" width="510" height="150" />
+        </mxCell>
+        <mxCell id="openid" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#334155;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="953" y="1170" width="24" height="24" />
+        </mxCell>
+        <mxCell id="label15" value="Steam OpenID&lt;br&gt;через HTTPS" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="853" y="1198" width="224" height="50" />
+        </mxCell>
+        <mxCell id="wfcd" value="«внешний компонент» Каталог WFCD&lt;br&gt;&lt;br&gt;raw.githubusercontent.com&lt;br&gt;WFCD/warframe-items/data/json&lt;br&gt;Warframes, Mods, Primary/Secondary/Melee" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1390" y="1280" width="430" height="160" />
+        </mxCell>
+        <mxCell id="json" value="" style="ellipse;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#334155;strokeWidth=1.6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1270" y="1348" width="24" height="24" />
+        </mxCell>
+        <mxCell id="label18" value="HTTPS GET&lt;br&gt;JSON каталога" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1170" y="1376" width="224" height="50" />
+        </mxCell>
+        <mxCell id="keys" value="«развёртывание» Ключи защиты&lt;br&gt;&lt;br&gt;App_Data/Keys&lt;br&gt;Том app-keys&lt;br&gt;Data Protection для cookies" style="shape=module;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=15;fillColor=#eef4ff;strokeColor=#607ba8;strokeWidth=1.6;spacingLeft=24;spacingRight=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="1550" width="510" height="140" />
+        </mxCell>
+        <mxCell id="note" value="Окружности обозначают контракты взаимодействия компонентов, а не вымышленные C#-интерфейсы IApi/IDatabase.&lt;br&gt;Пунктир — зависимость потребителя; сплошная линия — предоставление контракта. HTTP-интерфейс предоставляет веб-хост, SQL — PostgreSQL.&lt;br&gt;Фактический ENTRYPOINT Docker: [&amp;quot;dotnet&amp;quot;, &amp;quot;WarframeBuilds.dll&amp;quot;]. Отдельный WarframeBuilds.exe и отдельные сервисы расчёта не предполагаются.&lt;br&gt;Кэш предложений живёт внутри процесса web; после перезапуска пропадает. PostgreSQL и ключи Data Protection сохраняются в томах." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1725" width="1760" height="105" />
+        </mxCell>
+        <mxCell id="edge0" value="publish / компиляция" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="source" target="assembly">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="зависит от библиотек" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="assembly" target="libs">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="загружает сборку" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="assembly">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="host" target="http">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="965" y="800" />
+              <mxPoint x="965" y="995" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="использует" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="browser" target="http">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="postgres" target="sql">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="через EF Core / Npgsql" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="sql">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1282" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="читает и раздаёт" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="static">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="565" y="595" />
+              <mxPoint x="565" y="1355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="steam" target="openid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="Steam middleware" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="openid">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="680" y="595" />
+              <mxPoint x="680" y="1130" />
+              <mxPoint x="965" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="wfcd" target="json">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="WarframeApiService" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="json">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1345" y="595" />
+              <mxPoint x="1345" y="1260" />
+              <mxPoint x="1282" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="PersistKeysToFileSystem()" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="host" target="keys">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="650" y="595" />
+              <mxPoint x="650" y="1620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
