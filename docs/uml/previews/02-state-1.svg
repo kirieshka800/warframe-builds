@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1390" viewBox="0 0 1500 1390"><rect width="100%" height="100%" fill="white"/>
+<polyline points="749.0,178 749.0,221.5 750.0,221.5 750.0,265" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="744.0,252.0 750.0,265 756.0,252.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="500,360.0 330,360 330.0,700" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="324.0,687.0 330.0,700 336.0,687.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="1000,360.0 1170,360 1170.0,700" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="1164.0,687.0 1170.0,700 1176.0,687.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="1000,360.0 1380,360 1380,225 750,225 750.0,265" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="744.0,252.0 750.0,265 756.0,252.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="80,795.0 45,795 45,635 330,635 330.0,700" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="324.0,687.0 330.0,700 336.0,687.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="1420,795.0 1455,795 1455,635 1170,635 1170.0,700" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="1164.0,687.0 1170.0,700 1176.0,687.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="750.0,455 750,1060 750.0,1160" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="744.0,1147.0 750.0,1160 756.0,1147.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="330.0,890 330,1175 735,1175.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="722.0,1181.0 735,1175.0 722.0,1169.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="1170.0,890 1170,1175 765,1175.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="778.0,1169.0 765,1175.0 778.0,1181.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР15 · Состояния предложения автоподбора</text>
+<text x="52" y="99" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#475569">Объект: AutoBuildProposalStore.Proposal · состояние определяется Cancelled, SavedBuildId и доступностью в MemoryCache</text>
+<circle cx="749.0" cy="164.0" r="14.0" fill="#172033"/>
+<rect x="500" y="265" width="500" height="190" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="750.0" y="322.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Ожидает подтверждения</text>
+<text x="750.0" y="343.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033"></text>
+<text x="750.0" y="364.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Cancelled = false</text>
+<text x="750.0" y="385.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">SavedBuildId = null</text>
+<text x="750.0" y="406.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">entry / сохранить OwnerId, Plan, Fingerprint, ExpiresAt</text>
+<rect x="80" y="700" width="500" height="190" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="330.0" y="757.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Сохранено</text>
+<text x="330.0" y="778.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033"></text>
+<text x="330.0" y="799.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">SavedBuildId = id</text>
+<text x="330.0" y="820.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">entry / Build уже записан в PostgreSQL</text>
+<text x="330.0" y="841.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Билд существует независимо от кэша</text>
+<rect x="920" y="700" width="500" height="190" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="1170.0" y="757.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Отменено</text>
+<text x="1170.0" y="778.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033"></text>
+<text x="1170.0" y="799.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Cancelled = true</text>
+<text x="1170.0" y="820.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">SavedBuildId = null</text>
+<text x="1170.0" y="841.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">entry / показать сообщение об отмене</text>
+<circle cx="750.0" cy="1175.0" r="15.0" fill="white" stroke="#172033" stroke-width="2"/><circle cx="750.0" cy="1175.0" r="10.0" fill="#172033"/>
+<rect x="60" y="1240" width="1380" height="110" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<text x="72" y="1267" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Это аналитические состояния, а не enum в коде. Конечная точка завершает жизнь предложения, не удаляет Build.</text>
+<text x="72" y="1288" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Запрос чужого владельца получает 404 без изменения состояния. Неизвестный или истёкший токен ведёт на форму подбора.</text>
+<text x="72" y="1309" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">При изменении каталога Confirm не устанавливает Cancelled и не удаляет предложение: нужен новый подбор.</text>
+<rect x="510" y="195" width="470" height="44" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="745.0" y="220.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Add(owner, plan, fingerprint) / создать запись</text>
+<rect x="90" y="480" width="480" height="105" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="330.0" y="517.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Confirm [владелец; TTL не истёк; есть моды;</text>
+<text x="330.0" y="535.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">каталог и вместимость проверены] /</text>
+<text x="330.0" y="553.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">commit Build; SavedBuildId = id</text>
+<rect x="935" y="500" width="480" height="65" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1175.0" y="526.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Cancel [владелец; SavedBuildId = null] /</text>
+<text x="1175.0" y="544.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Cancelled = true</text>
+<rect x="960" y="115" width="490" height="100" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1205.0" y="150.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">GET Proposal [владелец] / показать предпросмотр;</text>
+<text x="1205.0" y="168.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Confirm [каталог изменился или нет модов] /</text>
+<text x="1205.0" y="186.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">отказать в сохранении; состояние не менять</text>
+<rect x="65" y="590" width="500" height="65" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="315.0" y="616.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">GET, Confirm или Cancel [владелец; запись доступна] /</text>
+<text x="315.0" y="634.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">открыть Details(SavedBuildId); не создавать копию</text>
+<rect x="925" y="590" width="500" height="65" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1175.0" y="616.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">GET или Confirm [владелец] / «предложение отменено»;</text>
+<text x="1175.0" y="634.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Cancel [владелец] / повторить отмену</text>
+<rect x="595" y="940" width="310" height="70" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="750.0" y="960.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Истечение TTL, вытеснение или перезапуск</text>
+<text x="750.0" y="978.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">/</text>
+<text x="750.0" y="996.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">запись становится недоступной</text>
+<rect x="100" y="1015" width="450" height="65" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="325.0" y="1041.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Истечение TTL, вытеснение или перезапуск /</text>
+<text x="325.0" y="1059.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">запись недоступна; Build остаётся в БД</text>
+<rect x="955" y="1015" width="450" height="65" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1180.0" y="1041.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Истечение TTL, вытеснение или перезапуск /</text>
+<text x="1180.0" y="1059.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">запись становится недоступной</text>
+</svg>

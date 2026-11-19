@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="2400" viewBox="0 0 1160 2400"><rect width="100%" height="100%" fill="white"/>
+<rect x="50" y="140" width="490" height="2100" fill="#fff" stroke="#cbd5e1"/><rect x="50" y="140" width="490" height="40" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="295.0" y="165.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" fill="#172033">Авторизованный пользователь</text>
+<rect x="540" y="140" width="570" height="2100" fill="#fff" stroke="#cbd5e1"/><rect x="540" y="140" width="570" height="40" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="825.0" y="165.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" fill="#172033">Система</text>
+<polyline points="293.0,231 293.0,250.5 295.0,250.5 295.0,270" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="289.0,257.0 295.0,270 301.0,257.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="490,315.0 630,315.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="617.0,321.0 630,315.0 617.0,309.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="815.0,360 815.0,385.0 820.0,385.0 820.0,410" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="814.0,397.0 820.0,410 826.0,397.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="715,460.0 480,460.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="493.0,454.0 480,460.0 493.0,466.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="295.0,425 295.0,360" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="301.0,373.0 295.0,360 289.0,373.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="820.0,510 820.0,535.0 815.0,535.0 815.0,560" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="809.0,547.0 815.0,560 821.0,547.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="815.0,650 815.0,690" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="809.0,677.0 815.0,690 821.0,677.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="815.0,780 815.0,795.0 820.0,795.0 820.0,810" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="814.0,797.0 820.0,810 826.0,797.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="710,865.0 595.0,865.0 595.0,860.0 480,860.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="493.0,854.0 480,860.0 493.0,866.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="930,865.0 1065,865 1065,1030 480,1030.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="493.0,1024.0 480,1030.0 493.0,1036.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="110,1030.0 75,1030 75,315 100,315.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="87.0,321.0 100,315.0 87.0,309.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="295.0,900 295.0,1130" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="289.0,1117.0 295.0,1130 301.0,1117.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="295.0,1240 295.0,1290" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="289.0,1277.0 295.0,1290 301.0,1277.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="420,1185.0 520.0,1185.0 520.0,1120.0 620,1120.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="607.0,1126.0 620,1120.0 607.0,1114.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="480,1325.0 570,1325 570,1465 630,1465.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="617.0,1471.0 630,1465.0 617.0,1459.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="630,1465.0 510,1465 510,2160 294,2160 280,2194.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="279.4016788774575,2179.6946858883025 280,2194.0 290.4978160591541,2184.2636835513545" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="815.0,1170 815.0,1190.0 820.0,1190.0 820.0,1210" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="814.0,1197.0 820.0,1210 826.0,1197.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="930,1265.0 1075,1265 1075,1600 1010,1600.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="1023.0,1594.0 1010,1600.0 1023.0,1606.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="620,1600.0 525,1600 525,2170 294,2170 280,2194.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="281.36764992642253,2179.747648135176 280,2194.0 291.7329967372037,2185.794100441465" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="710,1265.0 580,1265 580,1680 815,1680 815.0,1710" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="809.0,1697.0 815.0,1710 821.0,1697.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="815.0,1810 815.0,1835.0 820.0,1835.0 820.0,1860" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="814.0,1847.0 820.0,1860 826.0,1847.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="710,1910.0 480,1910.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="493.0,1904.0 480,1910.0 493.0,1916.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="110,1910.0 65,1910 65,1030 110,1030.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="97.0,1036.0 110,1030.0 97.0,1024.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="820.0,1960 820.0,1990.0 815.0,1990.0 815.0,2020" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="809.0,2007.0 815.0,2020 821.0,2007.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="620,2070.0 570,2070 570,2194 308,2194.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="321.0,2188.0 308,2194.0 321.0,2200.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР14 · Деятельности: автоматический подбор билда</text>
+<text x="52" y="99" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#475569">Warframe-builds · AutoBuildController · алгоритм по приоритетам каталога, без LLM и без учёта инвентаря</text>
+<circle cx="293.0" cy="218.0" r="13.0" fill="#172033"/>
+<rect x="100" y="270" width="390" height="90" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="309.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Выбрать снаряжение, цель, реактор</text>
+<text x="295.0" y="330.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">и бюджет поляризаций (0–8)</text>
+<rect x="630" y="270" width="370" height="90" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="319.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Проверить ввод и наличие снаряжения</text>
+<polygon points="820.0,410 925,460.0 820.0,510 715,460.0" fill="#fff5d9" stroke="#a77915" stroke-width="1.6"/>
+<text x="820.0" y="454.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Данные</text>
+<text x="820.0" y="474.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">корректны?</text>
+<rect x="110" y="425" width="370" height="70" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="464.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Исправить параметры</text>
+<rect x="630" y="560" width="370" height="90" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="599.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Подобрать совместимые моды и ранги;</text>
+<text x="815.0" y="620.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">рассчитать вместимость и пояснения</text>
+<rect x="620" y="690" width="390" height="90" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="729.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Создать предложение в MemoryCache:</text>
+<text x="815.0" y="750.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">токен, владелец, fingerprint; TTL = 15 мин</text>
+<rect x="110" y="820" width="370" height="80" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="864.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Изучить предпросмотр и пояснения</text>
+<polygon points="820.0,810 930,865.0 820.0,920 710,865.0" fill="#fff5d9" stroke="#a77915" stroke-width="1.6"/>
+<text x="820.0" y="859.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Есть установленные</text>
+<text x="820.0" y="879.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">моды?</text>
+<rect x="110" y="990" width="370" height="80" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="1024.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Изменить параметры</text>
+<text x="295.0" y="1045.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">или обновить каталог</text>
+<polygon points="295.0,1130 420,1185.0 295.0,1240 170,1185.0" fill="#fff5d9" stroke="#a77915" stroke-width="1.6"/>
+<text x="295.0" y="1179.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Подтвердить</text>
+<text x="295.0" y="1199.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">предложение?</text>
+<rect x="110" y="1290" width="370" height="70" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="1329.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Отменить предложение</text>
+<rect x="630" y="1400" width="370" height="130" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="1438.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Проверить токен, владельца и</text>
+<text x="815.0" y="1459.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">SavedBuildId;</text>
+<text x="815.0" y="1480.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">если ещё не сохранено: Cancelled = true;</text>
+<text x="815.0" y="1501.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">иначе открыть сохранённый Build</text>
+<rect x="620" y="1070" width="390" height="100" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="1114.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Проверить токен, OwnerId, TTL;</text>
+<text x="815.0" y="1135.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">захватить Gate; проверить SavedBuildId</text>
+<polygon points="820.0,1210 930,1265.0 820.0,1320 710,1265.0" fill="#fff5d9" stroke="#a77915" stroke-width="1.6"/>
+<text x="820.0" y="1259.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Доступно и ещё</text>
+<text x="820.0" y="1279.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">не сохранено?</text>
+<rect x="620" y="1550" width="390" height="100" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="1594.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Вернуть ошибку / 404 / форму подбора;</text>
+<text x="815.0" y="1615.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">для сохранённого — открыть его Build</text>
+<rect x="620" y="1710" width="390" height="100" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="1754.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Начать транзакцию, блокировать каталог;</text>
+<text x="815.0" y="1775.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">проверить fingerprint, моды и вместимость</text>
+<polygon points="820.0,1860 930,1910.0 820.0,1960 710,1910.0" fill="#fff5d9" stroke="#a77915" stroke-width="1.6"/>
+<text x="820.0" y="1904.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Проверки</text>
+<text x="820.0" y="1924.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">пройдены?</text>
+<rect x="110" y="1870" width="370" height="80" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="295.0" y="1904.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Показать «Подберите заново»;</text>
+<text x="295.0" y="1925.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">ничего не сохранять</text>
+<rect x="620" y="2020" width="390" height="100" rx="14" fill="#eef4ff" stroke="#607ba8" stroke-width="1.6"/>
+<text x="815.0" y="2064.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">Сохранить Build и BuildMod в транзакции;</text>
+<text x="815.0" y="2085.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#172033">записать SavedBuildId; открыть билд</text>
+<circle cx="294.0" cy="2194.0" r="14.0" fill="white" stroke="#172033" stroke-width="2"/><circle cx="294.0" cy="2194.0" r="9.0" fill="#172033"/>
+<rect x="50" y="2260" width="1060" height="90" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<text x="62" y="2286" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Гость сначала проходит вход. Повторное подтверждение возвращает тот же билд.</text>
+<text x="62" y="2306" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Обычные ошибки валидации и пользовательские отказы показаны явно; инфраструктурные исключения не развёрнуты.</text>
+<rect x="500" y="445" width="75" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="537.5" y="460.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[нет]</text>
+<rect x="830" y="523" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="865.0" y="538.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[да]</text>
+<rect x="505" y="840" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="540.0" y="855.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[да]</text>
+<rect x="960" y="1000" width="75" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="997.5" y="1015.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[нет]</text>
+<rect x="310" y="1245" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="345.0" y="1260.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[нет]</text>
+<rect x="500" y="1130" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="535.0" y="1145.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[да]</text>
+<rect x="980" y="1510" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1015.0" y="1525.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[нет]</text>
+<rect x="565" y="1655" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="600.0" y="1670.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[да]</text>
+<rect x="500" y="1895" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="535.0" y="1910.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[нет]</text>
+<rect x="830" y="1970" width="70" height="24" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="865.0" y="1985.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">[да]</text>
+</svg>

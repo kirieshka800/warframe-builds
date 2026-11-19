@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1760" viewBox="0 0 1640 1760"><rect width="100%" height="100%" fill="white"/>
+<polyline points="600,368.0 510.0,368.0 510.0,293.0 420,293.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polyline points="1030,368.0 1110.0,368.0 1110.0,338.0 1190,338.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<polyline points="815.0,561 815,650 1110,650 1110,845 815,845 815.0,875" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="815.0,561 821.0,571.0 815.0,581.0 809.0,571.0" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="600,368.0 475,430 475,790 240,790 240.0,875" fill="none" stroke="#475569" stroke-width="1.7" />
+<polygon points="600,368.0 593.7075076918319,377.8185813920162 582.0828806715033,376.88689118693435 588.3753729796714,367.06830979491815" stroke="#475569" stroke-width="1.7" fill="#475569"/>
+<polyline points="1000,988.0 1095.0,988.0 1095.0,1018.0 1190,1018.0" fill="none" stroke="#475569" stroke-width="1.7" />
+<text x="52" y="60" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ЛР16 · Классы: модель данных</text>
+<text x="52" y="99" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#475569">Ключевые свойства исходных C#-классов · + public · ? nullable · {readOnly} вычисляемое свойство · — собственных методов нет</text>
+<rect x="600" y="175" width="430" height="386" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="600" y="175" width="430" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="815.0" y="201.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Build</text>
+<path d="M600,517 h430" stroke="#334155"/>
+<text x="612" y="243" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="612" y="263" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Title: string</text>
+<text x="612" y="283" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Description: string?</text>
+<text x="612" y="303" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ UserId: string?</text>
+<text x="612" y="323" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ AuthorName: string</text>
+<text x="612" y="343" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ FormasCount: int</text>
+<text x="612" y="363" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ HelminthAbility: string?</text>
+<text x="612" y="383" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ HasReactor: bool</text>
+<text x="612" y="403" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ WarframeId: int?; Warframe: Warframe?</text>
+<text x="612" y="423" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ WeaponId: int?; Weapon: Weapon?</text>
+<text x="612" y="443" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ CreatedAt, UpdatedAt: DateTime</text>
+<text x="612" y="463" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BuildMods: List&lt;BuildMod&gt;</text>
+<text x="612" y="483" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ TargetName: string {readOnly}</text>
+<text x="612" y="503" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ IsWeapon: bool {readOnly}</text>
+<text x="612" y="543" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="60" y="190" width="360" height="206" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="60" y="190" width="360" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="240.0" y="216.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Warframe</text>
+<path d="M60,352 h360" stroke="#334155"/>
+<text x="72" y="258" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="72" y="278" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Name, Description: string</text>
+<text x="72" y="298" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BaseHealth, BaseShield: int</text>
+<text x="72" y="318" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BaseArmor, BaseEnergy: int</text>
+<text x="72" y="338" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ImageUrl, ImageName: string?</text>
+<text x="72" y="378" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="1190" y="175" width="390" height="326" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="1190" y="175" width="390" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="1385.0" y="201.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Weapon</text>
+<path d="M1190,457 h390" stroke="#334155"/>
+<text x="1202" y="243" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="1202" y="263" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Name, UniqueName: string</text>
+<text x="1202" y="283" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Category, WeaponType: string</text>
+<text x="1202" y="303" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Description, Polarity, Rarity: string</text>
+<text x="1202" y="323" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BaseDamage: double</text>
+<text x="1202" y="343" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ CriticalChance: double</text>
+<text x="1202" y="363" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ CriticalMultiplier: double</text>
+<text x="1202" y="383" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ StatusChance, FireRate: double</text>
+<text x="1202" y="403" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ MagazineSize: int</text>
+<text x="1202" y="423" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ReloadTime: double</text>
+<text x="1202" y="443" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ImageName: string?</text>
+<text x="1202" y="483" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="630" y="875" width="370" height="226" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="630" y="875" width="370" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="815.0" y="901.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">BuildMod</text>
+<path d="M630,1057 h370" stroke="#334155"/>
+<text x="642" y="943" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id, BuildId: int</text>
+<text x="642" y="963" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Build: Build</text>
+<text x="642" y="983" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ SlotIndex: int</text>
+<text x="642" y="1003" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ModId: int?; Mod: Mod?</text>
+<text x="642" y="1023" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ CurrentRank: int</text>
+<text x="642" y="1043" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ SlotPolarity: string</text>
+<text x="642" y="1083" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="1190" y="875" width="390" height="286" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="1190" y="875" width="390" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="1385.0" y="901.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Mod</text>
+<path d="M1190,1117 h390" stroke="#334155"/>
+<text x="1202" y="943" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="1202" y="963" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Name, UniqueName: string</text>
+<text x="1202" y="983" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Description, Compatibility: string</text>
+<text x="1202" y="1003" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Type: string; IsExilus: bool</text>
+<text x="1202" y="1023" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ LevelStatsJson: string</text>
+<text x="1202" y="1043" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BaseDrain: int</text>
+<text x="1202" y="1063" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Polarity, Rarity: string</text>
+<text x="1202" y="1083" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ BaseRank, MaxRank: int</text>
+<text x="1202" y="1103" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ImageName: string?</text>
+<text x="1202" y="1143" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="60" y="875" width="360" height="186" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="60" y="875" width="360" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="240.0" y="901.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">BuildComment</text>
+<path d="M60,1017 h360" stroke="#334155"/>
+<text x="72" y="943" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id, BuildId: int</text>
+<text x="72" y="963" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Build: Build?</text>
+<text x="72" y="983" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ AuthorName, Text: string</text>
+<text x="72" y="1003" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ CreatedAt: DateTime</text>
+<text x="72" y="1043" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="60" y="1210" width="440" height="246" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="60" y="1210" width="440" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="280.0" y="1236.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">Guide</text>
+<path d="M60,1412 h440" stroke="#334155"/>
+<text x="72" y="1278" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="72" y="1298" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Title, Description, Content: string</text>
+<text x="72" y="1318" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Category, Author: string</text>
+<text x="72" y="1338" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ UserId: string?</text>
+<text x="72" y="1358" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ReadTime, IconClass: string</text>
+<text x="72" y="1378" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ IsFeatured: bool</text>
+<text x="72" y="1398" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ ImageUrl: string?</text>
+<text x="72" y="1438" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="630" y="1310" width="370" height="186" fill="white" stroke="#334155" stroke-width="1.6"/><rect x="630" y="1310" width="370" height="42" fill="#e9effb" stroke="#334155"/>
+<text x="815.0" y="1336.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#172033">GearItem</text>
+<path d="M630,1452 h370" stroke="#334155"/>
+<text x="642" y="1378" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Id: int</text>
+<text x="642" y="1398" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Name, Category: string</text>
+<text x="642" y="1418" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Description: string</text>
+<text x="642" y="1438" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">+ Polarity, Rarity: string</text>
+<text x="642" y="1478" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">—</text>
+<rect x="535" y="690" width="560" height="125" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<text x="547" y="716" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">{В корректном билде выбран ровно один тип цели.}</text>
+<text x="547" y="736" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">БД запрещает одновременно два ID, но допускает оба null.</text>
+<text x="547" y="756" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">{BuildId, SlotIndex} уникальны.</text>
+<text x="547" y="776" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">0..9 — доступность слота зависит от типа снаряжения.</text>
+<rect x="1080" y="1390" width="500" height="135" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<text x="1092" y="1416" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Guide и GearItem — самостоятельные сущности.</text>
+<text x="1092" y="1436" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">GearItem не является базовым классом Warframe/Weapon.</text>
+<text x="1092" y="1456" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">UserId — строковый идентификатор Claims;</text>
+<text x="1092" y="1476" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">класса User в модели проекта нет.</text>
+<rect x="60" y="1610" width="1520" height="95" rx="3" fill="#fffbe8" stroke="#bca45d" stroke-width="1.6"/>
+<text x="72" y="1636" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">Связи: ◆ композиция (ромб у Build); сплошная линия — ассоциация. Кратности подписаны словами рядом с линиями.</text>
+<text x="72" y="1656" text-anchor="start" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#172033">У EF-сущностей показаны реальные свойства; CRUD-операции находятся в контроллерах, а не в моделях.</text>
+<rect x="425" y="285" width="170" height="80" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="510.0" y="310.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">цель: 0..1 Warframe на</text>
+<text x="510.0" y="328.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Build;</text>
+<text x="510.0" y="346.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">0..* Build на Warframe</text>
+<rect x="1025" y="290" width="160" height="80" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1105.0" y="315.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">цель: 0..1 Weapon на</text>
+<text x="1105.0" y="333.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Build;</text>
+<text x="1105.0" y="351.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">0..* Build на Weapon</text>
+<rect x="645" y="825" width="350" height="44" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="820.0" y="841.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">1 Build ◆ — 0..* BuildMod</text>
+<text x="820.0" y="859.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">Cascade; слотов не более 10</text>
+<rect x="90" y="720" width="370" height="60" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="275.0" y="744.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">1 Build ◆ — 0..* BuildComment</text>
+<text x="275.0" y="762.0" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">DeleteBehavior.Cascade</text>
+<rect x="1005" y="940" width="180" height="85" rx="3" fill="white" fill-opacity="0.96"/>
+<text x="1095.0" y="958.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">0..1 Mod на BuildMod;</text>
+<text x="1095.0" y="976.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">0..* BuildMod на Mod</text>
+<text x="1095.0" y="994.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">при удалении Mod: SET</text>
+<text x="1095.0" y="1012.5" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#172033">NULL</text>
+</svg>

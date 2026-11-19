@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-19T12:00:00.000Z" agent="Warframe UML" version="24.7.17" type="device" pages="2">
+  <diagram id="03-class-0" name="Модель данных">
+    <mxGraphModel dx="1640" dy="1760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="1760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ЛР16 · Классы: модель данных" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="22" width="1560" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Ключевые свойства исходных C#-классов · + public · ? nullable · {readOnly} вычисляемое свойство · — собственных методов нет" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="72" width="1560" height="40" />
+        </mxCell>
+        <mxCell id="Build" value="Build" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="600" y="175" width="430" height="386" />
+        </mxCell>
+        <mxCell id="Build_attrs" value="+ Id: int&lt;br&gt;+ Title: string&lt;br&gt;+ Description: string?&lt;br&gt;+ UserId: string?&lt;br&gt;+ AuthorName: string&lt;br&gt;+ FormasCount: int&lt;br&gt;+ HelminthAbility: string?&lt;br&gt;+ HasReactor: bool&lt;br&gt;+ WarframeId: int?; Warframe: Warframe?&lt;br&gt;+ WeaponId: int?; Weapon: Weapon?&lt;br&gt;+ CreatedAt, UpdatedAt: DateTime&lt;br&gt;+ BuildMods: List&amp;lt;BuildMod&amp;gt;&lt;br&gt;+ TargetName: string {readOnly}&lt;br&gt;+ IsWeapon: bool {readOnly}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Build">
+          <mxGeometry as="geometry" x="0" y="42" width="430" height="300" />
+        </mxCell>
+        <mxCell id="Build_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Build">
+          <mxGeometry as="geometry" x="0" y="342" width="430" height="44" />
+        </mxCell>
+        <mxCell id="Build_line" style="line;strokeColor=#334155;" vertex="1" parent="Build">
+          <mxGeometry as="geometry" x="0" y="342" width="430" height="1" />
+        </mxCell>
+        <mxCell id="Warframe" value="Warframe" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="190" width="360" height="206" />
+        </mxCell>
+        <mxCell id="Warframe_attrs" value="+ Id: int&lt;br&gt;+ Name, Description: string&lt;br&gt;+ BaseHealth, BaseShield: int&lt;br&gt;+ BaseArmor, BaseEnergy: int&lt;br&gt;+ ImageUrl, ImageName: string?" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Warframe">
+          <mxGeometry as="geometry" x="0" y="42" width="360" height="120" />
+        </mxCell>
+        <mxCell id="Warframe_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Warframe">
+          <mxGeometry as="geometry" x="0" y="162" width="360" height="44" />
+        </mxCell>
+        <mxCell id="Warframe_line" style="line;strokeColor=#334155;" vertex="1" parent="Warframe">
+          <mxGeometry as="geometry" x="0" y="162" width="360" height="1" />
+        </mxCell>
+        <mxCell id="Weapon" value="Weapon" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="175" width="390" height="326" />
+        </mxCell>
+        <mxCell id="Weapon_attrs" value="+ Id: int&lt;br&gt;+ Name, UniqueName: string&lt;br&gt;+ Category, WeaponType: string&lt;br&gt;+ Description, Polarity, Rarity: string&lt;br&gt;+ BaseDamage: double&lt;br&gt;+ CriticalChance: double&lt;br&gt;+ CriticalMultiplier: double&lt;br&gt;+ StatusChance, FireRate: double&lt;br&gt;+ MagazineSize: int&lt;br&gt;+ ReloadTime: double&lt;br&gt;+ ImageName: string?" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Weapon">
+          <mxGeometry as="geometry" x="0" y="42" width="390" height="240" />
+        </mxCell>
+        <mxCell id="Weapon_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Weapon">
+          <mxGeometry as="geometry" x="0" y="282" width="390" height="44" />
+        </mxCell>
+        <mxCell id="Weapon_line" style="line;strokeColor=#334155;" vertex="1" parent="Weapon">
+          <mxGeometry as="geometry" x="0" y="282" width="390" height="1" />
+        </mxCell>
+        <mxCell id="BuildMod" value="BuildMod" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="630" y="875" width="370" height="226" />
+        </mxCell>
+        <mxCell id="BuildMod_attrs" value="+ Id, BuildId: int&lt;br&gt;+ Build: Build&lt;br&gt;+ SlotIndex: int&lt;br&gt;+ ModId: int?; Mod: Mod?&lt;br&gt;+ CurrentRank: int&lt;br&gt;+ SlotPolarity: string" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildMod">
+          <mxGeometry as="geometry" x="0" y="42" width="370" height="140" />
+        </mxCell>
+        <mxCell id="BuildMod_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildMod">
+          <mxGeometry as="geometry" x="0" y="182" width="370" height="44" />
+        </mxCell>
+        <mxCell id="BuildMod_line" style="line;strokeColor=#334155;" vertex="1" parent="BuildMod">
+          <mxGeometry as="geometry" x="0" y="182" width="370" height="1" />
+        </mxCell>
+        <mxCell id="Mod" value="Mod" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="875" width="390" height="286" />
+        </mxCell>
+        <mxCell id="Mod_attrs" value="+ Id: int&lt;br&gt;+ Name, UniqueName: string&lt;br&gt;+ Description, Compatibility: string&lt;br&gt;+ Type: string; IsExilus: bool&lt;br&gt;+ LevelStatsJson: string&lt;br&gt;+ BaseDrain: int&lt;br&gt;+ Polarity, Rarity: string&lt;br&gt;+ BaseRank, MaxRank: int&lt;br&gt;+ ImageName: string?" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Mod">
+          <mxGeometry as="geometry" x="0" y="42" width="390" height="200" />
+        </mxCell>
+        <mxCell id="Mod_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Mod">
+          <mxGeometry as="geometry" x="0" y="242" width="390" height="44" />
+        </mxCell>
+        <mxCell id="Mod_line" style="line;strokeColor=#334155;" vertex="1" parent="Mod">
+          <mxGeometry as="geometry" x="0" y="242" width="390" height="1" />
+        </mxCell>
+        <mxCell id="BuildComment" value="BuildComment" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="875" width="360" height="186" />
+        </mxCell>
+        <mxCell id="BuildComment_attrs" value="+ Id, BuildId: int&lt;br&gt;+ Build: Build?&lt;br&gt;+ AuthorName, Text: string&lt;br&gt;+ CreatedAt: DateTime" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildComment">
+          <mxGeometry as="geometry" x="0" y="42" width="360" height="100" />
+        </mxCell>
+        <mxCell id="BuildComment_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildComment">
+          <mxGeometry as="geometry" x="0" y="142" width="360" height="44" />
+        </mxCell>
+        <mxCell id="BuildComment_line" style="line;strokeColor=#334155;" vertex="1" parent="BuildComment">
+          <mxGeometry as="geometry" x="0" y="142" width="360" height="1" />
+        </mxCell>
+        <mxCell id="Guide" value="Guide" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1210" width="440" height="246" />
+        </mxCell>
+        <mxCell id="Guide_attrs" value="+ Id: int&lt;br&gt;+ Title, Description, Content: string&lt;br&gt;+ Category, Author: string&lt;br&gt;+ UserId: string?&lt;br&gt;+ ReadTime, IconClass: string&lt;br&gt;+ IsFeatured: bool&lt;br&gt;+ ImageUrl: string?" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Guide">
+          <mxGeometry as="geometry" x="0" y="42" width="440" height="160" />
+        </mxCell>
+        <mxCell id="Guide_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Guide">
+          <mxGeometry as="geometry" x="0" y="202" width="440" height="44" />
+        </mxCell>
+        <mxCell id="Guide_line" style="line;strokeColor=#334155;" vertex="1" parent="Guide">
+          <mxGeometry as="geometry" x="0" y="202" width="440" height="1" />
+        </mxCell>
+        <mxCell id="GearItem" value="GearItem" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="630" y="1310" width="370" height="186" />
+        </mxCell>
+        <mxCell id="GearItem_attrs" value="+ Id: int&lt;br&gt;+ Name, Category: string&lt;br&gt;+ Description: string&lt;br&gt;+ Polarity, Rarity: string" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="GearItem">
+          <mxGeometry as="geometry" x="0" y="42" width="370" height="100" />
+        </mxCell>
+        <mxCell id="GearItem_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="GearItem">
+          <mxGeometry as="geometry" x="0" y="142" width="370" height="44" />
+        </mxCell>
+        <mxCell id="GearItem_line" style="line;strokeColor=#334155;" vertex="1" parent="GearItem">
+          <mxGeometry as="geometry" x="0" y="142" width="370" height="1" />
+        </mxCell>
+        <mxCell id="constraint" value="{В корректном билде выбран ровно один тип цели.}&lt;br&gt;БД запрещает одновременно два ID, но допускает оба null.&lt;br&gt;{BuildId, SlotIndex} уникальны.&lt;br&gt;0..9 — доступность слота зависит от типа снаряжения." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="535" y="690" width="560" height="125" />
+        </mxCell>
+        <mxCell id="independent" value="Guide и GearItem — самостоятельные сущности.&lt;br&gt;GearItem не является базовым классом Warframe/Weapon.&lt;br&gt;UserId — строковый идентификатор Claims;&lt;br&gt;класса User в модели проекта нет." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1080" y="1390" width="500" height="135" />
+        </mxCell>
+        <mxCell id="legend" value="Связи: ◆ композиция (ромб у Build); сплошная линия — ассоциация. Кратности подписаны словами рядом с линиями.&lt;br&gt;У EF-сущностей показаны реальные свойства; CRUD-операции находятся в контроллерах, а не в моделях." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1610" width="1520" height="95" />
+        </mxCell>
+        <mxCell id="edge0" value="цель: 0..1 Warframe на Build;&lt;br&gt;0..* Build на Warframe" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="Build" target="Warframe">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="510.0" y="368.0" />
+              <mxPoint x="510.0" y="293.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="цель: 0..1 Weapon на Build;&lt;br&gt;0..* Build на Weapon" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="Build" target="Weapon">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1110.0" y="368.0" />
+              <mxPoint x="1110.0" y="338.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="1 Build ◆ — 0..* BuildMod&lt;br&gt;Cascade; слотов не более 10" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=none;" edge="1" parent="1" source="Build" target="BuildMod">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="815" y="650" />
+              <mxPoint x="1110" y="650" />
+              <mxPoint x="1110" y="845" />
+              <mxPoint x="815" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="1 Build ◆ — 0..* BuildComment&lt;br&gt;DeleteBehavior.Cascade" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;startArrow=diamond;startFill=1;endArrow=none;" edge="1" parent="1" source="Build" target="BuildComment">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="475" y="430" />
+              <mxPoint x="475" y="790" />
+              <mxPoint x="240" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="0..1 Mod на BuildMod;&lt;br&gt;0..* BuildMod на Mod&lt;br&gt;при удалении Mod: SET NULL" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="BuildMod" target="Mod">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1095.0" y="988.0" />
+              <mxPoint x="1095.0" y="1018.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="03-class-1" name="Сервисы и контроллеры">
+    <mxGraphModel dx="2140" dy="2360" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2140" pageHeight="2360" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ЛР16 · Классы: сервисы, контроллеры и автоподбор" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#0f172a;fontStyle=1;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="22" width="2060" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Фрагмент реализации ASP.NET Core / EF Core · повторяющиеся типы с первой страницы обозначены ссылкой · параметры сокращены по примечанию" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontColor=#475569;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="72" width="2060" height="40" />
+        </mxCell>
+        <mxCell id="Controller" value="«framework» Controller" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="140" width="440" height="126" />
+        </mxCell>
+        <mxCell id="Controller_attrs" value="ASP.NET Core MVC" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Controller">
+          <mxGeometry as="geometry" x="0" y="42" width="440" height="40" />
+        </mxCell>
+        <mxCell id="Controller_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="Controller">
+          <mxGeometry as="geometry" x="0" y="82" width="440" height="44" />
+        </mxCell>
+        <mxCell id="Controller_line" style="line;strokeColor=#334155;" vertex="1" parent="Controller">
+          <mxGeometry as="geometry" x="0" y="82" width="440" height="1" />
+        </mxCell>
+        <mxCell id="BuildsController" value="BuildsController" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="50" y="415" width="590" height="272" />
+        </mxCell>
+        <mxCell id="BuildsController_attrs" value="− OwnerId: string {readOnly}&lt;br&gt;− FullBuilds: IQueryable&amp;lt;Build&amp;gt; {readOnly}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildsController">
+          <mxGeometry as="geometry" x="0" y="42" width="590" height="58" />
+        </mxCell>
+        <mxCell id="BuildsController_ops" value="+ Create(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Index(...), Details(id): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Edit(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ AddMod(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ SetSlotPolarity(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Delete(id), Duplicate(id): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ AddComment(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Export(id), Import(file): Task&amp;lt;IActionResult&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="BuildsController">
+          <mxGeometry as="geometry" x="0" y="100" width="590" height="172" />
+        </mxCell>
+        <mxCell id="BuildsController_line" style="line;strokeColor=#334155;" vertex="1" parent="BuildsController">
+          <mxGeometry as="geometry" x="0" y="100" width="590" height="1" />
+        </mxCell>
+        <mxCell id="AutoBuildController" value="AutoBuildController" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="415" width="440" height="197" />
+        </mxCell>
+        <mxCell id="AutoBuildController_attrs" value="− Owner: string {readOnly}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="AutoBuildController">
+          <mxGeometry as="geometry" x="0" y="42" width="440" height="40" />
+        </mxCell>
+        <mxCell id="AutoBuildController_ops" value="+ Index(...): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Preview(input): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Proposal(token): IActionResult&lt;br&gt;+ Confirm(token): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Cancel(token): Task&amp;lt;IActionResult&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="AutoBuildController">
+          <mxGeometry as="geometry" x="0" y="82" width="440" height="115" />
+        </mxCell>
+        <mxCell id="AutoBuildController_line" style="line;strokeColor=#334155;" vertex="1" parent="AutoBuildController">
+          <mxGeometry as="geometry" x="0" y="82" width="440" height="1" />
+        </mxCell>
+        <mxCell id="GuidesController" value="GuidesController" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1420" y="415" width="660" height="178" />
+        </mxCell>
+        <mxCell id="GuidesController_attrs" value="− OwnerId: string {readOnly}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="GuidesController">
+          <mxGeometry as="geometry" x="0" y="42" width="660" height="40" />
+        </mxCell>
+        <mxCell id="GuidesController_ops" value="+ Index(...), Details(id): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Create(), Edit(id): IActionResult / Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Create(guide), Edit(id, model): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Delete(id): Task&amp;lt;IActionResult&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="GuidesController">
+          <mxGeometry as="geometry" x="0" y="82" width="660" height="96" />
+        </mxCell>
+        <mxCell id="GuidesController_line" style="line;strokeColor=#334155;" vertex="1" parent="GuidesController">
+          <mxGeometry as="geometry" x="0" y="82" width="660" height="1" />
+        </mxCell>
+        <mxCell id="db" value="ApplicationDbContext" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="50" y="1040" width="510" height="201" />
+        </mxCell>
+        <mxCell id="db_attrs" value="+ Builds: DbSet&amp;lt;Build&amp;gt;&lt;br&gt;+ BuildMods: DbSet&amp;lt;BuildMod&amp;gt;&lt;br&gt;+ BuildComments: DbSet&amp;lt;BuildComment&amp;gt;&lt;br&gt;+ Warframes, Weapons, Mods: DbSet&amp;lt;...&amp;gt;&lt;br&gt;+ Guides, GearItems: DbSet&amp;lt;...&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="db">
+          <mxGeometry as="geometry" x="0" y="42" width="510" height="115" />
+        </mxCell>
+        <mxCell id="db_ops" value="# OnModelCreating(m: ModelBuilder): void" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="db">
+          <mxGeometry as="geometry" x="0" y="157" width="510" height="44" />
+        </mxCell>
+        <mxCell id="db_line" style="line;strokeColor=#334155;" vertex="1" parent="db">
+          <mxGeometry as="geometry" x="0" y="157" width="510" height="1" />
+        </mxCell>
+        <mxCell id="dbbase" value="«framework» DbContext" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="50" y="1430" width="510" height="126" />
+        </mxCell>
+        <mxCell id="dbbase_attrs" value="Microsoft.EntityFrameworkCore" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="dbbase">
+          <mxGeometry as="geometry" x="0" y="42" width="510" height="40" />
+        </mxCell>
+        <mxCell id="dbbase_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="dbbase">
+          <mxGeometry as="geometry" x="0" y="82" width="510" height="44" />
+        </mxCell>
+        <mxCell id="dbbase_line" style="line;strokeColor=#334155;" vertex="1" parent="dbbase">
+          <mxGeometry as="geometry" x="0" y="82" width="510" height="1" />
+        </mxCell>
+        <mxCell id="planner" value="«static» AutoBuildPlanner" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="900" width="620" height="159" />
+        </mxCell>
+        <mxCell id="planner_attrs" value="" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="planner">
+          <mxGeometry as="geometry" x="0" y="42" width="620" height="40" />
+        </mxCell>
+        <mxCell id="planner_ops" value="+ Goals(isWeapon: bool): IReadOnlyDictionary&amp;lt;string,string&amp;gt; {static}&lt;br&gt;+ Plan(target: Build, catalog: IReadOnlyList&amp;lt;Mod&amp;gt;,&lt;br&gt;   goal: string, maxFormas: int = 0): AutoBuildPlan {static}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="planner">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="77" />
+        </mxCell>
+        <mxCell id="planner_line" style="line;strokeColor=#334155;" vertex="1" parent="planner">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="1" />
+        </mxCell>
+        <mxCell id="calculator" value="«static» BuildCalculator" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="1190" width="620" height="159" />
+        </mxCell>
+        <mxCell id="calculator_attrs" value="" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="calculator">
+          <mxGeometry as="geometry" x="0" y="42" width="620" height="40" />
+        </mxCell>
+        <mxCell id="calculator_ops" value="+ Calculate(build: Build): BuildStatistics {static}&lt;br&gt;+ ModCost(mod: Mod, rank: int, polarity: string,&lt;br&gt;   specialSlot: bool = false): int {static}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="calculator">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="77" />
+        </mxCell>
+        <mxCell id="calculator_line" style="line;strokeColor=#334155;" vertex="1" parent="calculator">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="1" />
+        </mxCell>
+        <mxCell id="compat" value="«static» ModCompatibility" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="1470" width="620" height="178" />
+        </mxCell>
+        <mxCell id="compat_attrs" value="+ Polarities: string[] {static, readOnly}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="compat">
+          <mxGeometry as="geometry" x="0" y="42" width="620" height="40" />
+        </mxCell>
+        <mxCell id="compat_ops" value="+ CanEquip(build: Build, mod: Mod, slot: int): bool {static}&lt;br&gt;+ ValidSlots(build: Build): int[] {static}&lt;br&gt;+ IsMelee(build: Build): bool {static}&lt;br&gt;+ Family(mod: Mod): string {static}" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="compat">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="96" />
+        </mxCell>
+        <mxCell id="compat_line" style="line;strokeColor=#334155;" vertex="1" parent="compat">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="1" />
+        </mxCell>
+        <mxCell id="store" value="AutoBuildProposalStore" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="1000" width="570" height="215" />
+        </mxCell>
+        <mxCell id="store_attrs" value="− cache: MemoryCache&lt;br&gt;− admission: object&lt;br&gt;− order: Queue&amp;lt;string&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="store">
+          <mxGeometry as="geometry" x="0" y="42" width="570" height="77" />
+        </mxCell>
+        <mxCell id="store_ops" value="+ Add(owner: string, plan: AutoBuildPlan,&lt;br&gt;   fingerprint: string): string&lt;br&gt;+ Get(token: string?): Proposal?&lt;br&gt;+ Dispose(): void" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="store">
+          <mxGeometry as="geometry" x="0" y="119" width="570" height="96" />
+        </mxCell>
+        <mxCell id="store_line" style="line;strokeColor=#334155;" vertex="1" parent="store">
+          <mxGeometry as="geometry" x="0" y="119" width="570" height="1" />
+        </mxCell>
+        <mxCell id="disposable" value="«interface · framework» IDisposable" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="750" width="570" height="126" />
+        </mxCell>
+        <mxCell id="disposable_attrs" value="" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="disposable">
+          <mxGeometry as="geometry" x="0" y="42" width="570" height="40" />
+        </mxCell>
+        <mxCell id="disposable_ops" value="+ Dispose(): void" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="disposable">
+          <mxGeometry as="geometry" x="0" y="82" width="570" height="44" />
+        </mxCell>
+        <mxCell id="disposable_line" style="line;strokeColor=#334155;" vertex="1" parent="disposable">
+          <mxGeometry as="geometry" x="0" y="82" width="570" height="1" />
+        </mxCell>
+        <mxCell id="proposal" value="AutoBuildProposalStore.Proposal" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="1430" width="570" height="220" />
+        </mxCell>
+        <mxCell id="proposal_attrs" value="+ OwnerId, Fingerprint: string {init}&lt;br&gt;+ Plan: AutoBuildPlan {init}&lt;br&gt;+ ExpiresAt: DateTimeOffset {init}&lt;br&gt;+ Gate: SemaphoreSlim {readOnly}&lt;br&gt;+ SavedBuildId: int?&lt;br&gt;+ Cancelled: bool" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="proposal">
+          <mxGeometry as="geometry" x="0" y="42" width="570" height="134" />
+        </mxCell>
+        <mxCell id="proposal_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="proposal">
+          <mxGeometry as="geometry" x="0" y="176" width="570" height="44" />
+        </mxCell>
+        <mxCell id="proposal_line" style="line;strokeColor=#334155;" vertex="1" parent="proposal">
+          <mxGeometry as="geometry" x="0" y="176" width="570" height="1" />
+        </mxCell>
+        <mxCell id="plan" value="AutoBuildPlan" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1510" y="1870" width="570" height="182" />
+        </mxCell>
+        <mxCell id="plan_attrs" value="+ Build: Build&lt;br&gt;+ GoalLabel: string&lt;br&gt;+ Notes: List&amp;lt;string&amp;gt;&lt;br&gt;+ Reasons: Dictionary&amp;lt;int,string&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="plan">
+          <mxGeometry as="geometry" x="0" y="42" width="570" height="96" />
+        </mxCell>
+        <mxCell id="plan_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="plan">
+          <mxGeometry as="geometry" x="0" y="138" width="570" height="44" />
+        </mxCell>
+        <mxCell id="plan_line" style="line;strokeColor=#334155;" vertex="1" parent="plan">
+          <mxGeometry as="geometry" x="0" y="138" width="570" height="1" />
+        </mxCell>
+        <mxCell id="stats" value="BuildStatistics" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="50" y="1740" width="510" height="277" />
+        </mxCell>
+        <mxCell id="stats_attrs" value="+ Capacity, UsedCapacity: int&lt;br&gt;+ Health, Shields, Armor, Energy: double&lt;br&gt;+ AbilityStrength, AbilityDuration: double&lt;br&gt;+ AbilityRange, AbilityEfficiency: double&lt;br&gt;+ Damage, CriticalChance: double&lt;br&gt;+ CriticalMultiplier, StatusChance: double&lt;br&gt;+ FireRate, Multishot: double&lt;br&gt;+ MagazineSize, ReloadTime: double&lt;br&gt;+ Warnings: List&amp;lt;string&amp;gt;" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="stats">
+          <mxGeometry as="geometry" x="0" y="42" width="510" height="191" />
+        </mxCell>
+        <mxCell id="stats_ops" value="—" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="stats">
+          <mxGeometry as="geometry" x="0" y="233" width="510" height="44" />
+        </mxCell>
+        <mxCell id="stats_line" style="line;strokeColor=#334155;" vertex="1" parent="stats">
+          <mxGeometry as="geometry" x="0" y="233" width="510" height="1" />
+        </mxCell>
+        <mxCell id="api" value="WarframeApiService" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;swimlane;horizontal=1;startSize=42;fillColor=#e9effb;swimlaneFillColor=#ffffff;strokeColor=#334155;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="750" y="1850" width="620" height="178" />
+        </mxCell>
+        <mxCell id="api_attrs" value="" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="api">
+          <mxGeometry as="geometry" x="0" y="42" width="620" height="40" />
+        </mxCell>
+        <mxCell id="api_ops" value="+ SyncModsAsync(ct): Task&lt;br&gt;+ SyncWarframesAsync(ct): Task&lt;br&gt;+ SyncWeaponsAsync(ct): Task&lt;br&gt;+ SyncGearCategoryAsync(categoryName, jsonFileName, ct): Task" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=13;fontFamily=Helvetica;strokeColor=none;fillColor=none;" vertex="1" parent="api">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="96" />
+        </mxCell>
+        <mxCell id="api_line" style="line;strokeColor=#334155;" vertex="1" parent="api">
+          <mxGeometry as="geometry" x="0" y="82" width="620" height="1" />
+        </mxCell>
+        <mxCell id="appnote" value="Также: BuildsController использует BuildCalculator и ModCompatibility; AutoBuildController — оба этих класса.&lt;br&gt;AutoBuildPlanner использует ModCompatibility и создаёт AutoBuildPlan. AutoBuildPlan.Build → Build (1).&lt;br&gt;WarframeApiService хранит внедрённые HttpClient и ApplicationDbContext (ассоциации 1), обновляет каталоги.&lt;br&gt;Чтобы не пересекать все линии, эти связи перечислены здесь. Store хранит Proposal через MemoryCache, а не List&amp;lt;Proposal&amp;gt;." style="whiteSpace=wrap;html=1;fontFamily=Helvetica;strokeWidth=1.6;shape=note;size=15;fillColor=#fffbe8;strokeColor=#bca45d;align=left;spacing=12;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="50" y="2160" width="2030" height="140" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="BuildsController" target="Controller">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="345" y="305" />
+              <mxPoint x="700" y="305" />
+              <mxPoint x="700" y="203" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="AutoBuildController" target="Controller">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="GuidesController" target="Controller">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1750" y="305" />
+              <mxPoint x="1240" y="305" />
+              <mxPoint x="1240" y="203" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="db: 1 {injected}" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="BuildsController" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="345.0" y="863.5" />
+              <mxPoint x="305.0" y="863.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="использует" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="AutoBuildController" target="planner">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="970.0" y="756.0" />
+              <mxPoint x="1060.0" y="756.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="store: 1 {injected}" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="AutoBuildController" target="store">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1440" y="575" />
+              <mxPoint x="1440" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="db: 1 {injected}" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="AutoBuildController" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="690" y="575" />
+              <mxPoint x="690" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="db: 1 {injected}" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="GuidesController" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2110" y="560" />
+              <mxPoint x="2110" y="885" />
+              <mxPoint x="25" y="885" />
+              <mxPoint x="25" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="db" target="dbbase">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=block;endFill=0;" edge="1" parent="1" source="store" target="disposable">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="Get возвращает / Add создаёт" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="store" target="proposal">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="Plan: 1" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="proposal" target="plan">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="использует" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="planner" target="calculator">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" value="использует" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="calculator" target="compat">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge14" value="создаёт результат" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;strokeColor=#475569;strokeWidth=1.6;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;dashed=1;endArrow=open;endFill=0;" edge="1" parent="1" source="calculator" target="stats">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="650" y="1315" />
+              <mxPoint x="650" y="1890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
