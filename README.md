@@ -11,7 +11,7 @@ Entity Framework Core и PostgreSQL. Интерфейс на русском, р�
 - [CSV-шаблон записи результатов прогона](docs/TEST_RUN.csv) — изначально все кейсы `NOT_RUN`.
 
 - [15 приоритетных проверок — чек-листы ЛР30](docs/CHECKLISTS.md).
-- [Чек-листы в Word](docs/CHECKLISTS.docx) · [Таблица результатов](docs/CHECKLIST_RUN.csv).
+- [Чек-листы в Word — по образцу, без матрицы](docs/CHECKLISTS.docx).
 
 ## Что работает
 
